@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="62dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/colorAccent"
+        android:gravity="fill_vertical|center_horizontal"
+        android:text="30s" />
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="83dp"
+        android:layout_height="29dp"
+        android:layout_alignTop="@+id/time"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:background="@color/colorPrimary"
+        android:gravity="fill_vertical|center_horizontal"
+        android:text="0/0" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:gravity="fill_vertical|center_horizontal" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:alpha="0"
+        android:gravity="center"
+        android:text="Play Again" />
+
+    <LinearLayout
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-109dp"
+        android:layout_marginTop="124dp"
+        android:layout_toEndOf="@+id/question"
+        android:orientation="vertical"
+        android:layout_marginLeft="-109dp"
+        android:layout_toRightOf="@+id/question">
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_orange_dark"
+            android:gravity="fill_vertical|center_horizontal"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorAccent"
+            android:gravity="fill_vertical|center_horizontal"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:gravity="fill_vertical|center_horizontal"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="fill_vertical|center_horizontal"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/yOrN"
+        android:layout_width="174dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="154dp"
+        android:gravity="fill_vertical|center_horizontal"
+        android:textSize="25sp" />
+</RelativeLayout>
